@@ -1,28 +1,4 @@
-@font-face {
-  font-family: 'Roboto';
-  src:
-    url('/fonts/RobotoRegular.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'Roboto';
-  src: url('/fonts/Roboto-Light.ttf') format('truetype');
-  font-weight: lighter;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'Roboto';
-  src: url('/fonts/Roboto-Bold.ttf') format('truetype');
-  font-weight: bold;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'Roboto';
-  src: url('/fonts/Roboto-Italic.ttf') format('truetype');
-  font-weight: normal;
-  font-style: italic;
-}
+@import "http://webfonts.ru/import/cabin.css";
 html, body {
   margin: 0;
   padding: 0;
@@ -32,7 +8,8 @@ html, body {
   clear: both;
 }
 .container {
-  width: 1140px;
+  width: 90%;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 0;
   z-index: 15;
@@ -58,9 +35,9 @@ header {
   float: right;
   margin: 0;
   padding: 0;
-  height: 80px;
-  width: 800px;
-  max-width: 80%;
+  height: 100%;
+  width: 80%;
+  max-width: 800px;
 }
 .nav ul {
   margin: 0;
@@ -75,13 +52,11 @@ header {
   padding-top: 10px;
   height: 40px;
   width: 14%;
-  font-family: 'Roboto';
-  font-size: 1em;
-  font-weight: bold;
+  font-family: 'Cabin';
+  font-size: 1.1em;
+  font-weight: 700;
   text-transform: uppercase;
   text-align: center;
-  border: 2px solid #1d2126;
-  border-radius: 10px;
   box-sizing: border-box;
 }
 .nav a {
@@ -96,30 +71,32 @@ header {
   height: 660px;
   margin: 0;
   padding: 0;
+  padding-top: 1px;
   background: #3a454d url('/img/banner-bg.png') no-repeat center;
   opacity: 0.8;
 }
 .welcome {
-  width: 650px;
-  height: 340px;
+  width: 50%;
+  height: 50%;
   margin: 0;
+  margin-top: 40vh;
   padding: 0;
 }
 .welcome h1 {
   margin: 0;
   padding: 0;
-  padding-top: 220px;
+  font-family: 'Cabin';
   font-weight: normal;
   text-transform: uppercase;
   color: #ffffff;
 }
 .welcome p {
   display: block;
+  font-family: 'Cabin';
   padding: 0;
   color: #ccd0d7;
 }
 .welcome-btn1 {
-  float: left;
   display: inline-block;
   margin: 0;
   padding-top: 10px;
@@ -127,10 +104,10 @@ header {
   height: 30px;
   border: 2px solid #ffffff;
   border-radius: 5px;
+  font-family: 'Cabin';
   text-align: center;
 }
 .welcome-btn2 {
-  float: left;
   display: inline-block;
   margin: 0;
   margin-left: 10px;
@@ -139,6 +116,7 @@ header {
   height: 30px;
   border: 2px solid #ffffff;
   border-radius: 5px;
+  font-family: 'Cabin';
   text-align: center;
 }
 .welcome-btn1 a {
@@ -161,36 +139,31 @@ header {
 .welcome-btn2:hover {
   width: 122px;
   height: 32px;
-  width: 120px;
-  height: 30px;
   border: 1px solid #23b7a4;
   border-radius: 5px;
   background-color: #23b7a4;
 }
 #about {
   width: 100%;
-  height: 740px;
+  height: 660px;
   margin: 0;
   padding: 0;
   border-bottom: 1px solid #1d2126;
 }
 .left {
-  display: inline-block;
   float: left;
   margin: 0;
   padding: 0;
-  width: 57%;
-  height: 740px;
+  width: 58%;
+  height: 660px;
   box-sizing: border-box;
 }
 .right {
-  display: inline-block;
   float: left;
   margin: 0;
   padding: 0;
-  margin-left: 30px;
   width: 40%;
-  height: 740px;
+  height: 660px;
   box-sizing: border-box;
 }
 .gray-block {
@@ -208,27 +181,30 @@ header {
   padding: 0;
   margin-top: 70px;
   padding-left: 5px;
-  width: 50%x;
+  width: 50%;
   height: 40px;
-  display: inline-block;
   text-transform: uppercase;
+  font-family: 'Cabin';
   font-size: 35px;
   line-height: 35px;
-  font-weight: lighter;
 }
 .text {
   margin: 0;
   margin-top: 60px;
+  margin-left: 4%;
   padding: 0;
+  padding-right: 60px;
   width: 100%;
-  height: 220px;
+  height: 50%;
+  font-family: 'Cabin';
   font-size: 18px;
   color: #696969;
+  box-sizing: border-box;
 }
 .social {
   margin: 0;
+  margin-left: 4%;
   padding: 0;
-  margin-top: 40px;
   width: 305px;
   height: 60px;
   box-sizing: border-box;
@@ -236,6 +212,7 @@ header {
 .social a {
   margin: 0;
   padding: 0;
+  font-family: 'Cabin';
   text-decoration: none;
 }
 .social .btn {
@@ -248,7 +225,7 @@ header {
   box-sizing: border-box;
 }
 .social .btn:last-child {
-  margin-right: none;
+  margin-right: 0;
 }
 .btn.fb {
   background: #d3d3d3 url('/img/SocialSprint.png') no-repeat 0 0;
@@ -287,7 +264,7 @@ header {
   margin-top: 180px;
   margin-bottom: 40px;
   padding-left: 60px;
-  width: 460px;
+  width: 100%;
   height: 80px;
   box-sizing: border-box;
 }
@@ -297,7 +274,7 @@ header {
   padding: 0;
   margin-bottom: 40px;
   padding-left: 60px;
-  width: 460px;
+  width: 100%;
   height: 80px;
   box-sizing: border-box;
 }
@@ -306,7 +283,7 @@ header {
   margin: 0;
   padding: 0;
   padding-left: 60px;
-  width: 460px;
+  width: 100%;
   height: 80px;
   box-sizing: border-box;
 }
@@ -314,6 +291,7 @@ h3 {
   padding: 0;
   margin: 0;
   text-transform: uppercase;
+  font-family: 'Cabin';
   font-size: 20px;
   font-weight: bold;
   color: #696969;
@@ -335,36 +313,35 @@ h3 {
   margin: 0;
   padding: 0;
   padding-top: 10px;
+  font-family: 'Cabin';
   font-size: 16px;
   color: #696969;
 }
 #team {
   width: 100%;
-  height: 650px;
+  height: 660px;
   margin: 0;
   padding: 0;
 }
 .members {
   margin: 0;
+  margin-left: 3%;
   margin-top: 60px;
   padding: 0;
-  width: 100%;
-  height: 370;
+  width: 95%;
+  height: auto;
   box-sizing: border-box;
 }
 .unit {
   display: inline-block;
   margin: 0;
   padding: 0;
-  margin-right: 29px;
+  margin-right: 1%;
   width: 260px;
   height: 370px;
   color: #696969;
   background-color: #e1e6ea;
   box-sizing: border-box;
-}
-.unit:last-child {
-  margin-right: 0;
 }
 .unit:hover {
   color: #ffffff;
@@ -395,17 +372,16 @@ h3 {
 .unit-social {
   position: absolute;
   visibility: hidden;
-  margin: 0;
-  padding: 0;
-  margin-top: 125px;
-  margin-left: 55px;
   width: 260px;
   height: 300px;
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 .hidden-btn {
-  margin: 0;
+  margin-top: 125px;
   padding: 0;
+  width: 100%;
   float: left;
   width: 50px;
   height: 50px;
@@ -420,6 +396,7 @@ h3 {
 }
 .hidden-btn.tw {
   background: #3a454d url('/img/SocialSprint.png') no-repeat -65px -5px;
+  margin-left: 60px;
 }
 .hidden-btn.tw:hover {
   background: #d3d3d3 url('/img/SocialSprint.png') no-repeat -65px -65px;
@@ -436,9 +413,10 @@ h3 {
   padding: 0;
   padding-top: 20px;
   padding-left: 20px;
+  font-family: 'Cabin';
   text-transform: uppercase;
   font-size: 16px;
-  font-weight: bold;
+  font-weight: 700;
   box-sizing: border-box;
 }
 .unit .position {
@@ -446,6 +424,7 @@ h3 {
   margin: 0;
   padding: 5px 0;
   padding-left: 20px;
+  font-family: 'Cabin';
   font-size: 14px;
   box-sizing: border-box;
 }
@@ -489,13 +468,15 @@ h3 {
 }
 .photos1 {
   margin: 0;
-  padding: 0;
+  margin-left: 3%;
   margin-top: 60px;
-  width: 100%;
+  padding: 0;
+  width: 95%;
   height: 265px;
 }
 .photos2 {
   margin: 0;
+  margin-left: 3%;
   padding: 0;
   margin-top: 30px;
   width: 100%;
@@ -534,13 +515,13 @@ h3 {
   background: #4e5a62 url('/img/work-photo.png') no-repeat -780px -295px;
 }
 .more-photo {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   margin-top: 60px;
-  margin-left: 495px;
   padding-top: 10px;
   width: 150px;
   height: 45px;
+  font-family: 'Cabin';
   text-align: center;
   border: 2px solid #ffffff;
   border-radius: 6px;
@@ -584,8 +565,9 @@ h3 {
   width: 360px;
   height: 65px;
   color: #ffffff;
+  font-family: 'Cabin';
   font-size: 20px;
-  font-weight: bold;
+  font-weight: 700;
   text-transform: uppercase;
   background-color: #292f36;
   box-sizing: border-box;
@@ -607,6 +589,7 @@ h3 {
   box-sizing: border-box;
 }
 .service-list {
+  margin-left: 3%;
   padding-top: 60px;
   width: 100%;
   height: 230px;
@@ -640,6 +623,7 @@ h3 {
   margin: 0;
   padding: 0;
   text-transform: uppercase;
+  font-family: 'Cabin';
   padding-top: 85px;
   text-align: center;
   font-size: 18px;
@@ -658,17 +642,19 @@ h3 {
   color: #ffffff;
 }
 .features-list {
+  margin-left: 3%;
   padding-top: 60px;
   width: 100%;
   height: 440px;
 }
 .features-item {
-  display: inline-block;
+  float: left;
   margin: 0;
   padding: 0;
   margin-right: 25px;
   width: 360px;
   height: 440px;
+  font-family: 'Cabin';
   color: #ffffff;
   box-sizing: border-box;
 }
@@ -680,9 +666,11 @@ h3 {
   padding: 0;
   text-transform: uppercase;
   padding-top: 290px;
+  font-family: 'Cabin';
   font-size: 18px;
 }
 .features-item p {
+font-family: 'Cabin';
   font-weight: lighter;
 }
 .features-one {
@@ -703,8 +691,9 @@ h3 {
 .contact-info {
   display: inline-block;
   margin: 0;
+  margin-left: 3%;
   padding: 0;
-  width: 555px;
+  width: 45%;
   height: 180px;
 }
 .contact-info h3 {
@@ -713,6 +702,7 @@ h3 {
   padding-left: 10px;
   padding-bottom: 10px;
   margin-top: 50px;
+  font-family: 'Cabin';
   text-transform: uppercase;
   font-size: 20px;
   color: #000000;
@@ -736,8 +726,9 @@ h3 {
   width: 255px;
   height: 50px;
   color: #696969;
+  font-family: 'Cabin';
   font-size: 16px;
-  font-weight: bold;
+  font-weight: 700;
   text-transform: uppercase;
   box-sizing: border-box;
 }
@@ -747,8 +738,9 @@ h3 {
   width: 255px;
   height: 50px;
   color: #696969;
+  font-family: 'Cabin';
   font-size: 16px;
-  font-weight: bold;
+  font-weight: 700;
   text-transform: uppercase;
   box-sizing: border-box;
 }
@@ -756,46 +748,61 @@ h3 {
   margin-left: 30px;
   width: 240px;
   height: 45px;
+  padding: 0 15px;
+  font-family: 'Cabin';
   font-size: 18px;
   color: #696969;
   background-color: #eaeef1;
   border: none;
   border-radius: 5px;
+  outline:none;
+  box-sizing: border-box;
 }
 #mail-id {
   margin-left: 15px;
   width: 240px;
   height: 45px;
+  padding: 0 15px;
+  font-family: 'Cabin';
   font-size: 18px;
   color: #696969;
   background-color: #eaeef1;
   border: none;
   border-radius: 5px;
+  outline:none;
+  box-sizing: border-box;
 }
 #message-id {
   margin-left: 30px;
   width: 495px;
   height: 160px;
+  padding: 10px 15px;
+  font-family: 'Cabin';
   font-size: 18px;
   color: #696969;
   background-color: #eaeef1;
   border: none;
   border-radius: 5px;
+  outline:none;
+  box-sizing: border-box;
 }
 #send-btn {
   margin-left: 30px;
   margin-top: 30px;
   width: 150px;
   height: 45px;
+  font-family: 'Cabin';
   color: #ffffff;
   text-transform: uppercase;
   background-color: #23b7a4;
   border: none;
   border-radius: 5px;
+  outline:none;
 }
 #send-btn:hover {
   color: #3a454d;
   border: 2px solid #3a454d;
+  cursor: pointer;
 }
 iframe {
   padding-top: 60px;
@@ -814,10 +821,12 @@ footer {
 .footer-left {
   float: left;
   margin: 0;
+  margin-left: 3%;
   padding: 0;
   padding-top: 43px;
-  width: 50%;
+  width: 46%;
   height: 90px;
+  font-family: 'Cabin';
   color: #ffffff;
   box-sizing: border-box;
 }
@@ -833,9 +842,11 @@ footer {
 .footer-right {
   display: inline-block;
   margin: 0;
+  margin-right: 3%;
   padding: 0;
-  width: 50%;
+  width: 46%;
   height: 90px;
+  font-family: 'Cabin';
   color: #ffffff;
   box-sizing: border-box;
 }
@@ -855,7 +866,7 @@ footer {
   box-sizing: border-box;
 }
 .contact-social:last-child {
-  margin-right: none;
+  margin-right: 0;
 }
 .contact-social.fb {
   background: url('/img/SocialSprint.png') no-repeat 0 0;
